@@ -12,6 +12,10 @@
 	<h3>JSF 2.0 Hello World Example with Ajax - hello.xhtml</h3>
 	 <h:form>
     	
+    	<h:graphicImage library="theme1" name="img/picture.png" width="100px" />
+    	
+    	<h:graphicImage library="theme2" name="picture.png" width="100px" />
+    	
     		<h:inputText id="name" value="#{helloBean.name}"></h:inputText>
     		<h:commandButton value="Welcome Me">
     			 <f:ajax execute="name" render="output" />
