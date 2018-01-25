@@ -1,0 +1,4 @@
+.obligatoire:after {
+	color: red;
+	content: ' *';
+}
