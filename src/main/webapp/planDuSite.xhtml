@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      >
+    <h:body>
+    	Plan du site
+    	
+    	<h:form>
+    	
+		   	<h:panelGroup layout="block" id="container" rendered="#{cookieBean.visible}">
+		   		<div class="notificationbar-cookie"  style="width:90%;font-size:25px;background-color:silver;height:50px;margin:10px">
+		   			Cookie
+		   		</div>
+		   	</h:panelGroup>
+		   	
+		   	<h:commandButton id="cacheCookie" value="Hide cookie" action="#{cookieBean.hide}"></h:commandButton>
+		   	
+    	</h:form>
+    	
+    	
+    	<div id="menuAccueil">
+    		<h:form>
+    	   		<h:link value="Accueil" outcome="accueil"></h:link>
+    		</h:form>
+    	</div>
+
+    	<div id="form5">
+		<h3>
+		<a>lienPromotionEtMobilite</a>
+		</h3>
+		</div>
+		
+    </h:body>
+
+</html>

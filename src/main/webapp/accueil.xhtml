@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+       xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      >
+    <h:body>
+    	Accueil
+    	
+    	<h:form>
+    	
+		   	<h:panelGroup layout="block" id="container" rendered="#{cookieBean.visible}">
+		   		<div class="notificationbar-cookie"  style="width:90%;font-size:25px;background-color:silver;height:50px;margin:10px">
+		   			Cookie
+		   		</div>
+		   	</h:panelGroup>
+		   	
+		   	<h:commandButton id="cacheCookie" value="Hide cookie" action="#{cookieBean.hide}"></h:commandButton>
+		   	
+    	</h:form>
+    	
+    	<h:form>
+    	   <h:link value="Plan du site" outcome="planDuSite"></h:link>
+    	   <h:link value="Mentions Legales" outcome="mentionsLegales"></h:link>
+    	</h:form>
+
+		<div id="footer">
+		FOOTER
+		</div>
+    </h:body>
+
+</html>
